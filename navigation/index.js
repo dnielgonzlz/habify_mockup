@@ -22,7 +22,7 @@ function HomeScreen () {
         <Tab.Navigator initialRouteName="Main">
             <Tab.Screen name="Main" component={MainScreen} options={{title: "HOME",
             tabBarIcon:({name, size, color}) => (
-                <Entypo name="home" size={24} color={"black"}/>
+                <Entypo name="home" size={24} color={"blue"}/>
             )
         }}
              />
