@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import Screen1 from './onboarding_screens/onboarding1';
+import FormRating from './onboarding_screens/Physical_Question';
+import { NavigationContainer } from '@react-navigation/native';
+import MyStack from './navigation';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <View style={styles.container}>
+            {/* <Screen1 /> */}
+            {/* <FormRating/> */}
+            <NavigationContainer>
+                <MyStack/>
+            </NavigationContainer>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#2F2F3F'
+    },
 });
