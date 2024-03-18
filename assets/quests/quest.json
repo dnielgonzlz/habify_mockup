@@ -3,24 +3,28 @@
         "id": 1,
         "title": "Go for a 30-minute walk",
         "description": "Take a brisk walk outside for at least 30 minutes. Enjoy the fresh air and get some exercise!",
-        "points": 50
+        "points": 50,
+        "type": "exercise"
     },
     {
         "id": 2,
         "title": "Read for 20 minutes",
         "description": "Find a book or an article that interests you and spend 20 minutes reading. It's a great way to relax and learn something new!",
-        "points": 30
+        "points": 30,
+        "type": "mental"
     },
     {
         "id": 3,
         "title": "Write in your journal",
         "description": "Take some time to reflect on your day and write about your thoughts and feelings. It can help you unwind and gain clarity.",
-        "points": 40
+        "points": 40,
+        "type": "perception"
     },
     {
         "id": 4,
         "title": "Try a new recipe",
         "description": "Explore your culinary skills by trying out a new recipe. Cooking can be both fun and rewarding!",
-        "points": 60
+        "points": 60,
+        "type": "charisma"
     }
 ]
