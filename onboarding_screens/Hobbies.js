@@ -5,15 +5,15 @@ import LottieView from 'lottie-react-native';
 
 export default function Hobbies({ navigation }) {
   const hobbies = [
-    { id: 1, name: 'Coffee', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/coffee.json') },
-    { id: 2, name: 'Cooking', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/cooking.json') },
-    { id: 3, name: 'Friends', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/friends.json') },
-    { id: 4, name: 'Parks', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/parks.json') },
-    { id: 5, name: 'Play Music', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/play-music.json') },
-    { id: 6, name: 'Sports', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/Sports.json') },
-    { id: 7, name: 'Reading', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/reading.json') },
-    { id: 8, name: 'Watch TV', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/watch-tv.json') },
-    { id: 9, name: 'Play Videogames', animation: require('/Users/danielgonzalez/Desktop/Projects of React Native/Habify/onboarding-screen/assets/gameboy.json') },
+    { id: 1, name: 'Coffee', animation: require('../assets/coffee.json') },
+    { id: 2, name: 'Cooking', animation: require('../assets/cooking.json') },
+    { id: 3, name: 'Friends', animation: require('../assets/friends.json') },
+    { id: 4, name: 'Parks', animation: require('../assets/parks.json') },
+    { id: 5, name: 'Play Music', animation: require('../assets/play-music.json') },
+    { id: 6, name: 'Sports', animation: require('../assets/Sports.json') },
+    { id: 7, name: 'Reading', animation: require('../assets/reading.json') },
+    { id: 8, name: 'Watch TV', animation: require('../assets/watch-tv.json') },
+    { id: 9, name: 'Play Videogames', animation: require('../assets/gameboy.json') },
   ];
 
   const [selectedHobbies, setSelectedHobbies] = React.useState([]);
