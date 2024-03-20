@@ -20,6 +20,8 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#2F2F3F'
+        backgroundColor: '#2F2F3F',
+        padding: 0, // set padding to 0
+        margin: 0, // set margin to 0
     },
 });
