@@ -12,6 +12,11 @@ import { Entypo } from '@expo/vector-icons';
 import { NavigationContainer } from "@react-navigation/native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import ProfileScreen from "../Profile";
+import PriorityStat from "../onboarding_screens/PriorityStat";
+import Hobbies from "../onboarding_screens/Hobbies";
+import AvatarScreen from "../main-app/avatar";
+import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome6 } from '@expo/vector-icons';
 
 
 const Stack = createStackNavigator ();
@@ -20,18 +25,24 @@ const Tab = createBottomTabNavigator();
 function HomeScreen () {
     return(
         <Tab.Navigator initialRouteName="Main">
-            <Tab.Screen name="Main" component={MainScreen} options={{title: "HOME",
+            <Tab.Screen name="QUESTS" component={MainScreen} options={{ title: "QUESTS",
             tabBarIcon:({name, size, color}) => (
-                <Entypo name="home" size={24} color={"blue"}/>
+                <FontAwesome5 name="gamepad" size={24} color="black" />
             )
-        }}
-             />
-            <Tab.Screen name="Profile" component={ProfileScreen} options={{title: "PROFILE",
+            }}
+                />
+            <Tab.Screen name="AVATAR" component={AvatarScreen} options={{title: "AVATAR",
+            tabBarIcon:({name, size, color}) => (
+                <FontAwesome6 name="face-laugh" size={24} color="black"/>
+            )
+            }}
+            />
+            <Tab.Screen name="PROFILE" component={ProfileScreen} options={{title: "PROFILE",
             tabBarIcon:({name, size, color}) => (
                 <MaterialCommunityIcons name="face-man-profile" size={24} color={"black"}/>
             )
-        }}
-        />
+            }}
+            />
         </Tab.Navigator>
     )
             
@@ -49,6 +60,8 @@ function MyStack (props) {
             <Stack.Screen name = "Q4" component={PerceptionQuestion} options={{headerShown:false}}/>
             <Stack.Screen name = "Q5" component={WillpowerQuestion} options={{headerShown:false}}/>
             <Stack.Screen name = "Daily Quest" component={DailyQuests} options={{headerShown:false}}/>
+            <Stack.Screen name = "Priority Stat" component={PriorityStat} options={{headerShown:false}}/>
+            <Stack.Screen name = "Favorite Hobbies" component={Hobbies} options={{headerShown:false}}/>
             <Stack.Screen name = "Main Screen" component={HomeScreen} options={{headerShown:false}}/>
         </Stack.Navigator>
     )

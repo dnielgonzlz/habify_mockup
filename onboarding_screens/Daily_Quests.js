@@ -11,18 +11,18 @@ const DailyQuests = ({navigation}) => {
             <View style={styles.options}>
             <TouchableOpacity 
             style={styles.button}
-            onPress={() => navigation.navigate("Main Screen")}>
+            onPress={() => navigation.navigate("Priority Stat")}>
             <Text style={styles.buttonText}> One per day </Text>
             </TouchableOpacity>
             <TouchableOpacity 
             style={styles.button}
-            onPress={() => navigation.navigate("Main Screen")}>
+            onPress={() => navigation.navigate("Priority Stat")}>
             <Text style={styles.buttonText}> Two per day </Text>
             </TouchableOpacity>
             {/* */}
             <TouchableOpacity 
             style={styles.button}
-            onPress={() => navigation.navigate("Main Screen")}>
+            onPress={() => navigation.navigate("Priority Stat")}>
             <Text style={styles.buttonText}> Three per day </Text>
             </TouchableOpacity>
             </View>
